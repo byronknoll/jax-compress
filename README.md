@@ -32,7 +32,7 @@ These benchmarks were performed using jax-compress v1 with the default parameter
 *   **enwik9:** Compressed to 113,393,442 bytes in 110,013.19 seconds (Dictionary size: 80,040 bytes). 
     * The preprocessed enwik9 file was split into two parts. 
     * The "checkpoint" option was used to save and load model weights between processing each part. 
-    * Article ordering preprocessing was used:
+    * Article ordering preprocessing (from [fx2-cmix](https://github.com/kaitz/fx2-cmix)) was used:
 
 ```bash
 cd enwik9-preproc/
