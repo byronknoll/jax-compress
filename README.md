@@ -28,7 +28,7 @@ Feel free to contact me at byron@byronknoll.com if you have any questions.
 ### Benchmarks
 These benchmarks were performed using jax-compress v1 with the default parameter settings on a v6e-1 TPU. Compression time and decompression time are approximately the same.
 
-*   **enwik8:** Compressed to 15,458,356 bytes in 13,699.63 seconds.
+*   **enwik8:** Compressed to 15,505,441 bytes in 13,707.98 seconds.
 *   **enwik9:** Compressed to 113,393,442 bytes in 110,013.19 seconds (Dictionary size: 80,040 bytes). 
     * The preprocessed enwik9 file was split into two parts. 
     * The "checkpoint" option was used to save and load model weights between processing each part. 
@@ -41,6 +41,13 @@ make
 # After decompression:
 ./enwik9-preproc d final.dat
 ```
+
+  * enwik9 decompressor size is 60,872 bytes. It is a zip file which contains:
+      * jax_compress notebook
+      * enwik9 article reordering code. This doesn't include the new_article_order, which is only needed for compression.
+      * NNCP preprocessor code
+      * dictionary for enwik9
+
 
 See the [Large Text Compression Benchmark](http://mattmahoney.net/dc/text.html) for more information about the test files and a comparison with other compression programs.
 
