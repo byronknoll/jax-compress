@@ -1,6 +1,6 @@
 # jax-compress
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/byronknoll/jax-compress/blob/master/jax-compress.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/byronknoll/jax-compress/blob/main/jax_compress.ipynb)
 
 Made by Byron Knoll. GitHub repository: https://github.com/byronknoll/jax-compress
 
